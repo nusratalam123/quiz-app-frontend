@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Navbar from "../component/Navbar";
+import styles from "./login.module.css";
+import Link from "next/link";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -25,8 +27,27 @@ const Register = () => {
 
   return (
     <div>
-      <Navbar />
-      <form onSubmit={handleSubmit}>
+      <nav className="navbar">
+        <div style={{ margin: "20px" }}>
+          <span>Quizo App</span>
+        </div>
+
+        <div className="auth-buttons">
+          <Link href="/">
+            <button>Home</button>
+          </Link>
+          <Link href="/login">
+            <button>Login</button>
+          </Link>
+          <Link href="/register">
+            <button>Register</button>
+          </Link>
+        </div>
+      </nav>
+      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
+        Registration
+      </h2>
+      <form className={styles["login-form"]} onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Username"
@@ -48,7 +69,9 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Register</button>
+        <button className={styles["login-button"]}  type="submit">
+          Register
+        </button>
       </form>
     </div>
   );

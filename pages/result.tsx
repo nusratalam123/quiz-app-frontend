@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Navbar from "../component/Navbar";
+import styles from "../pages/result.module.css";
 
 interface Question {
   question: string;
@@ -22,19 +23,21 @@ const ResultsPage = () => {
   }, [answers, questions]);
 
   return (
-    <div>
+    <div className={styles.container}>
       <Navbar />
-      <h1>Quiz Results</h1>
-      <p>
-        Score: {score}/{total}
-      </p>
-      {parsedQuestions.map((question, index) => (
-        <div key={index}>
-          <h2>{question.question}</h2>
-          <p>Your answer: {parsedAnswers[index]}</p>
-          <p>Correct answer: {question.answer}</p>
-        </div>
-      ))}
+      <div className={styles.border}>
+        <h1>Quiz Results</h1>
+        <p>
+          Score: {score}/{total}
+        </p>
+        {parsedQuestions.map((question, index) => (
+          <div key={index} className={styles.questionResult}>
+            <h2>{question.question}</h2>
+            <p>Your answer: {parsedAnswers[index]}</p>
+            <p>Correct answer: {question.answer}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

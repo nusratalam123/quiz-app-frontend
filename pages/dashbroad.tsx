@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useUser } from "../contex/userContext";
 
 
 const Dashboard = () => {
@@ -23,6 +24,11 @@ const Dashboard = () => {
           </Link>
           <Link href="/login">
             <button>Login</button>
+            {/* {user ? (
+              <p>Welcome, {user.email}!</p>
+            ) : (
+              <p>Please log in to see your dashboard.</p>
+            )} */}
           </Link>
 
           <button onClick={handleLogout}>Logout</button>
@@ -31,13 +37,13 @@ const Dashboard = () => {
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
         <h1>Dashboard</h1>
       </h2>
-      <div >
+      <div>
         <Link href="/quiz">
           <button
             className="login-button"
             style={{
               width: "30%",
-              marginLeft:"35%",
+              marginLeft: "35%",
               padding: "10px",
               backgroundColor: "#0070f3",
               color: "#fff",

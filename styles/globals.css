@@ -1,0 +1,65 @@
+/* styles/globals.css */
+body {
+    background-image: url('../Image/logo.jpg'); /* Replace with the actual path to your image */
+    background-size: 40%; /* This makes sure the image covers the entire page */
+    background-position-x: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    height: 0%; /* Ensures the background covers the full viewport height */
+    margin: 0; /* Removes default margin */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0070f3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #0056b3;
+}

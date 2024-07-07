@@ -1,3 +1,11 @@
+The frontend for the Quiz App is built using Next.js, Tailwind, and TypeScript. It provides a user-friendly interface for users to interact with the backend API. The frontend allows users to sign up, sign in, view available quizzes, create new quiz, and play any quiz of their choice. The use of Next.js allows for fast rendering of the pages, while Tailwind provides a sleek and modern design. TypeScript is used for type checking and to ensure that the code is less prone to errors.
+
+
+repo for backend - https://github.com/nusratalam123/quiz-app-backend (will try to make it into a monorepo)
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

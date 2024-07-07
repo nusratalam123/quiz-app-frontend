@@ -1,0 +1,49 @@
+.container {
+  padding: 20px;
+}
+
+.questionItem {
+  margin-bottom: 20px;
+}
+
+.questionText {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: block;
+  margin: 5px 0;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.selectedOption {
+  background-color: #004080 !important;
+}
+
+.navigationButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  background-color: #005bb5;
+}

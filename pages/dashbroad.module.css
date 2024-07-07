@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensures the container covers the full viewport height */
+    margin: 0; /* Removes default margin */
+    overflow: hidden; /* Ensures child elements are contained within the container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e7dcdc; /* Replace with the actual path to your image */
+    background-size: cover; /* This makes sure the image covers the entire container */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    opacity: 0.7; /* Adjust the opacity for the transparency effect */
+    z-index: -1; /* Sends the overlay behind other content */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0070f3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}

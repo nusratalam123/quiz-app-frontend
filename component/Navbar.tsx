@@ -28,7 +28,7 @@ const Navbar = () => {
         </Link>
         <Link href="/register">
           <button>Register</button>
-        </Link>
+        </Link>  
       </div>
     </nav>
   );

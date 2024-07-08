@@ -48,13 +48,12 @@ const Admin = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:7000/api/quizzes",
+        "http://localhost:5000/api/quizzes",
         { title, questions },
         {
           headers: { Authorization: `Bearer ${token}` },
         }
       );
-      // Clear the form or show a success message
       setTitle("");
       setQuestions([{ question: "", options: [""], answer: "" }]);
       router.push("/admin");

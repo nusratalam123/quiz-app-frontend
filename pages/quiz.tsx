@@ -32,7 +32,7 @@ const QuizPage = () => {
   useEffect(() => {
     const fetchQuizzes = async () => {
       try {
-        const res = await axios.get("http://localhost:7000/api/quizzes");
+        const res = await axios.get("http://localhost:5000/api/quizzes");
         setQuizzes(res.data);
       } catch (err) {
         console.error(err);

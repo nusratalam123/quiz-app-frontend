@@ -48,7 +48,7 @@ const Admin = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:5000/api/quizzes",
+        "http://localhost:7000/api/quizzes",
         { title, questions },
         {
           headers: { Authorization: `Bearer ${token}` },
